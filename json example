@@ -1,0 +1,62 @@
+sections[]
+	id
+	name
+	subjects[]
+		id
+		name
+		tasks[]
+			id
+			name
+			filePath
+			description
+		
+
+trainess[]
+	id
+	name
+	progress[]
+		sectionId
+		subjectId
+		taskId
+		completed (boolean)
+		
+trainers[]
+	id
+	name
+	trainees[]
+		id
+		
+{
+	"sections": [
+		{
+			"id" : 1,
+			name: "section1"
+			"subjects": [
+				{
+					"id": 1,
+					name: "subject1",
+					"tasks": [
+						{
+							"id": 1,
+							name: "task1",
+							...
+						}
+					]
+				},
+			]			
+		}
+	],
+	"trainees" : [
+		{
+			"id": 1,
+			"name": "tal",
+			"progress": [
+				{
+					sectionId: 2
+					subjectId: 3
+					taskId: 1
+				}
+			]
+		}
+	]
+}
