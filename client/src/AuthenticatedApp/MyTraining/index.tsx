@@ -8,14 +8,14 @@ interface Section {
 }
 
 const MyTraining = () => {
-  const [sections] = useFetch<Section[]>('/sections');
+  const [sections] = useFetch<Section[]>('sections');
   const navigate = useNavigate();
 
   return (
     <Stack height='100%'>
       <Stack direction='row' spacing={1}>
         {sections?.map(({ name, id }) => (
-          <Button variant='outlined' onClick={() => navigate(`/sections/${id}`)} key={id}>{name}</Button>
+          <Button variant='outlined' onClick={() => navigate(`/my-training/${id}`)} key={id}>{name}</Button>
         ))}
       </Stack>
       <Outlet />

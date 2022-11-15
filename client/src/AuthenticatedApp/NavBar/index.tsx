@@ -30,7 +30,7 @@ const NavBar = ({ height }: NavBarProps) => (
             alignItems='center'
             spacing={1}
           >
-            <NavLink to='/'>החפיפה שלי</NavLink>
+            <NavLink to='/my-training'>החפיפה שלי</NavLink>
             <NavLink to='/score-board'>לוח תוצאות</NavLink>
           </Stack>
         </Grid>

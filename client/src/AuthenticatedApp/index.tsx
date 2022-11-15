@@ -8,7 +8,6 @@ import SectionPage from './MyTraining/SectionPage';
 const ShellRoutes = () => (
   <Routes>
     <Route path='/' element={<Shell />}>
-      <Route index element={<MyTraining />} />
       <Route path='my-training' element={<MyTraining />}>
         <Route path=':id' element={<SectionPage />} />
       </Route>

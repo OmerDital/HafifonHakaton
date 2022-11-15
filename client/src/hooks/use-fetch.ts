@@ -11,7 +11,7 @@ const useFetch = <T>(url: string, defaultValue?: T): UseFetch<T> => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<T>(`api/${url}`);
+        const response = await axios.get<T>(`http://localhost:3000/api/${url}`);
 
         if (response) {
           setData(response.data);
