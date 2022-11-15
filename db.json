@@ -12,13 +12,13 @@
               "id": 1,
               "name": "over the wire ctf",
               "description": "first task about Linux commands",
-              "filepath": "./overthewire.txt"
+              "filepath": ".\\overthewire.txt"
             },
             {
               "id": 2,
               "name": "advanced linux",
               "description": "Advanced Linux commands",
-              "filepath": "./advancedlinux.txt"
+              "filepath": ".\\advancedlinux.txt"
             }
           ]
         },
@@ -30,13 +30,13 @@
               "id": 1,
               "name": "Network Protocols",
               "description": "TCP >>> UDP",
-              "filepath": "./protocols.txt"
+              "filepath": ".\\protocols.txt"
             },
             {
               "id": 2,
               "name": "Network Attacks",
               "description": "Learn about network attacks",
-              "filepath": ".\networkattacks.txt"
+              "filepath": ".\\networkattacks.txt"
             }
           ]
         }

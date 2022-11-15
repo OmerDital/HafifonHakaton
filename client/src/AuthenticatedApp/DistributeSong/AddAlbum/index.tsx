@@ -7,7 +7,7 @@ import LayersOutlinedIcon from '@mui/icons-material/LayersOutlined';
 import { SideMenuContainer } from '../SideMenu/SideMenuContainer';
 import LoadAlbumDialog from './LoadAlbumDialog';
 import useOpen from '../../../hooks/use-open';
-import CreateAlbumDialog from '../../ManageEntities/Albums/CreateAlbumDialog';
+import CreateAlbumDialog from '../../MyTraining/Albums/CreateAlbumDialog';
 
 interface AddAlbumProps {
   handleClose: () => void;
