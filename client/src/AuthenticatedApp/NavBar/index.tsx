@@ -1,5 +1,5 @@
 import {
-  AppBar, Grid, Toolbar, Typography
+  AppBar, Grid, Stack, Toolbar, Typography
 } from '@mui/material';
 import NavLink from './NavLink';
 import Greeting from './Greeting';
@@ -10,7 +10,7 @@ interface NavBarProps {
 }
 
 const NavBar = ({ height }: NavBarProps) => (
-  <AppBar position='relative' sx={{ height, minWidth: '620px' }}>
+  <AppBar position='relative' sx={{ height, minWidth: '620px', bgcolor: 'rgba(217, 217, 217, 1)' }}>
     <Toolbar>
       <Grid
         container
@@ -21,21 +21,18 @@ const NavBar = ({ height }: NavBarProps) => (
         <Grid container flexWrap='nowrap' sx={{ width: 'auto' }}>
           <Grid item>
             <Typography variant='h5' marginRight='10px'>
-              חזיון שירים | מצעד 41
+              חפיפון |
             </Typography>
           </Grid>
-          <Grid
-            container
+          <Stack
+            direction='row'
             justifyContent='space-around'
             alignItems='center'
-            wrap='nowrap'
-            sx={{ width: 'auto', height: '100%' }}
+            spacing={1}
           >
-            <NavLink to='/'>ניהול ישויות</NavLink>
-            <NavLink to='/distribute-song'>הפצת שיר</NavLink>
-            <NavLink to='/calculators'>מחשבונים</NavLink>
-            <NavLink to='/users'>משתמשים</NavLink>
-          </Grid>
+            <NavLink to='/'>החפיפה שלי</NavLink>
+            <NavLink to='/score-board'>לוח תוצאות</NavLink>
+          </Stack>
         </Grid>
         <Grid
           container

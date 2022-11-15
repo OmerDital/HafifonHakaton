@@ -1,7 +1,6 @@
 import { Grid } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 import NavBar from './NavBar';
-import RequireAuth from '../components/RequireAuth';
 
 const Shell = () => (
   <Grid container height='100%'>

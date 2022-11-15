@@ -22,7 +22,7 @@ export const getPartOfTheDay = (hour: number) => {
 
 const Greeting = () => (
   <Typography variant='caption'>
-    {`${getPartOfTheDay(new Date().getHours())},משתמש`}
+    {`${getPartOfTheDay(new Date().getHours())}, טל`}
   </Typography>
 );
 
