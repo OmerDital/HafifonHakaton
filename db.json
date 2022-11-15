@@ -1,0 +1,80 @@
+{
+  "sections": [
+    {
+      "id": 1,
+      "name": "hafifat LM",
+      "subjects": [
+        {
+          "id": 1,
+          "name": "Linux",
+          "tasks": [
+            {
+              "id": 1,
+              "name": "over the wire ctf",
+              "description": "first task about Linux commands",
+              "filepath": "./overthewire.txt"
+            },
+            {
+              "id": 2,
+              "name": "advanced linux",
+              "description": "Advanced Linux commands",
+              "filepath": "./advancedlinux.txt"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Networking",
+          "tasks": [
+            {
+              "id": 1,
+              "name": "Network Protocols",
+              "description": "TCP >>> UDP",
+              "filepath": "./protocols.txt"
+            },
+            {
+              "id": 2,
+              "name": "Network Attacks",
+              "description": "Learn about network attacks",
+              "filepath": ".\networkattacks.txt"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "trainees": [
+    {
+      "id": 1,
+      "name": "Daniel Asa",
+      "sections": [
+        {
+          "sectionId": 1
+        }
+      ],
+      "progress": [
+        {
+          "sectionId": 1,
+          "subjectId": 1,
+          "taskId": 1
+        },
+        {
+          "sectionId": 1,
+          "subjectId": 1,
+          "taskId": 2
+        }
+      ]
+    }
+  ],
+  "trainers": [
+    {
+      "id": 1,
+      "name": "Diran G",
+      "trainees": [
+        {
+          "id": 1
+        }
+      ]
+    }
+  ]
+}
