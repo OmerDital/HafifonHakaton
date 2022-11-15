@@ -11,7 +11,7 @@ const Providers = ({ children }: { children: JSX.Element }) => (
       <CssBaseline />
       <BrowserRouter>
         <AlertProvider>
-          <AuthProvider>{children}</AuthProvider>
+          {children}
         </AlertProvider>
       </BrowserRouter>
     </AppThemeProvider>

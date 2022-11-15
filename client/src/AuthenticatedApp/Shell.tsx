@@ -4,14 +4,12 @@ import NavBar from './NavBar';
 import RequireAuth from '../components/RequireAuth';
 
 const Shell = () => (
-  <RequireAuth>
-    <Grid container height='100%'>
-      <NavBar height='65px' />
-      <Grid item container sx={{ height: 'calc(100% - 65px)' }}>
-        <Outlet />
-      </Grid>
+  <Grid container height='100%'>
+    <NavBar height='65px' />
+    <Grid item container sx={{ height: 'calc(100% - 65px)' }}>
+      <Outlet />
     </Grid>
-  </RequireAuth>
+  </Grid>
 );
 
 export default Shell;
